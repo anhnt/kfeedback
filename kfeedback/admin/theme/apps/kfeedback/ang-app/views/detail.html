@@ -1,0 +1,60 @@
+<header class="oe-header">
+  <header-top></header-top>
+</header>
+<main class="oe-main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-12">
+        <left-sidebar projects="projects"></left-sidebar>
+      </div>
+      <div class="col-sm-9 col-xs-12 main-col">
+        <div class="todo-editor">
+          <div class="project-editor">
+            <input type="text" class="project-title" ng-model="project.title" ng-enter="saveProject()" ng-blur="saveProject()" />
+
+            <ul class="todo-tasks">
+              <li>
+                <div class="task-item task-item-input">
+                  <div class="task-add">
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <input type="text" class="task-label task-input" ng-enter="add()" ng-blur="add()" ng-model="newTask.name" placeholder="Add item">
+                </div>
+              </li>
+              <li ng-repeat="task in tasks track by $index | orderBy:'end'" ng-if="!task.done">
+                <div class="task-item">
+                  <div class="todo-checkbox">
+                    <input type="checkbox" id="checkbox-{{$index}}" ng-checked="task.done" ng-click="switch($index, task)" />
+                    <label for="checkbox-{{$index}}"></label>
+                  </div>
+                  <input type="text" class="task-label" ng-enter="updateTask($index, task)" ng-blur="updateTask($index, task)" ng-model="task.name" />
+                  <input type="text" class="task-due" ng-model="task.due" data-placement="left" data-template="/theme/apps/todo-app/ang-app/views/directives/datepicker.html" data-model-date-format="yyyy-MM-dd" data-date-format="MMM d" data-date-type="number" data-min-date="today" data-autoclose="1" bs-datepicker ng-enter="updateTask($index, task)" ng-blur="updateTask($index, task)" />
+                  <a href="javascript:;" class="task-remove" ng-click="remove($index, task)"><i class="fa fa-close"></i></a>
+                </div>
+              </li>
+            </ul>
+
+            <div class="done-label text-right">
+              <span ng-click="showComplete = !showComplete"><i class="fa fa-lg fa-angle-right"></i> Completed tasks</span>
+            </div>
+
+            <ul class="todo-tasks done-tasks" ng-if="showComplete">
+              <li ng-repeat="task in tasks track by $index" ng-if="task.done">
+                <div class="task-item">
+                  <div class="todo-checkbox">
+                    <input type="checkbox" id="checkbox-{{$index}}" ng-checked="task.done" ng-click="switch($index, task)" />
+                    <label for="checkbox-{{$index}}"></label>
+                  </div>
+                  <input type="text" class="task-label" ng-enter="updateTask($index, task)" ng-blur="updateTask($index, task)" ng-model="task.name" />
+                  <input type="text" class="task-due" ng-model="task.due" data-container="body" data-model-date-format="yyyy-MM-dd" data-date-format="MMM d" data-date-type="number" data-min-date="today" data-autoclose="1" bs-datepicker ng-enter="updateTask($index, task)" ng-blur="updateTask($index, task)" />
+                  <a href="javascript:;" class="task-remove" ng-click="remove($index, task)"><i class="fa fa-close"></i></a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

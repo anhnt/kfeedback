@@ -1,0 +1,536 @@
+.full-cover, .full-height {
+    height: 100%
+}
+
+.fontItalic, .fontLightItalic {
+    font-style: italic
+}
+
+.nm {
+    margin: 0
+}
+
+.np {
+    padding: 0
+}
+
+.nvm {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.mt10x, .mv10x {
+    margin-top: 100px
+}
+
+.mb10x, .mv10x {
+    margin-bottom: 100px
+}
+
+.nvp {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.nhp {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.nml {
+    margin-left: 0
+}
+
+.nmr {
+    margin-right: 0
+}
+
+.mt9x, .mv9x {
+    margin-top: 90px
+}
+
+.mb9x, .mv9x {
+    margin-bottom: 90px
+}
+
+.pv10x {
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+.ph10x {
+    padding-left: 100px;
+    padding-right: 100px
+}
+
+.mt8x, .mv8x {
+    margin-top: 80px
+}
+
+.mb8x, .mv8x {
+    margin-bottom: 80px
+}
+
+.pv9x {
+    padding-top: 90px;
+    padding-bottom: 90px
+}
+
+.ph9x {
+    padding-left: 90px;
+    padding-right: 90px
+}
+
+.mt7x, .mv7x {
+    margin-top: 70px
+}
+
+.mb7x, .mv7x {
+    margin-bottom: 70px
+}
+
+.pv8x {
+    padding-top: 80px;
+    padding-bottom: 80px
+}
+
+.ph8x {
+    padding-left: 80px;
+    padding-right: 80px
+}
+
+.mt6x, .mv6x {
+    margin-top: 60px
+}
+
+.mb6x, .mv6x {
+    margin-bottom: 60px
+}
+
+.pv7x {
+    padding-top: 70px;
+    padding-bottom: 70px
+}
+
+.ph7x {
+    padding-left: 70px;
+    padding-right: 70px
+}
+
+.mt5x, .mv5x {
+    margin-top: 50px
+}
+
+.mb5x, .mv5x {
+    margin-bottom: 50px
+}
+
+.pv6x {
+    padding-top: 60px;
+    padding-bottom: 60px
+}
+
+.ph6x {
+    padding-left: 60px;
+    padding-right: 60px
+}
+
+.mt4x, .mv4x {
+    margin-top: 40px
+}
+
+.mb4x, .mv4x {
+    margin-bottom: 40px
+}
+
+.pv5x {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.ph5x {
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+.mt3x, .mv3x {
+    margin-top: 30px
+}
+
+.mb3x, .mv3x {
+    margin-bottom: 30px
+}
+
+.pv4x {
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.ph4x {
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.mt2x, .mv2x {
+    margin-top: 20px
+}
+
+.mb2x, .mv2x {
+    margin-bottom: 20px
+}
+
+.pv3x {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.ph3x {
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.mt, .mv {
+    margin-top: 10px
+}
+
+.mb, .mv {
+    margin-bottom: 10px
+}
+
+.pv2x {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.pt, .pv {
+    padding-top: 10px
+}
+
+.pb, .pv {
+    padding-bottom: 10px
+}
+
+.ph2x {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.ph, .pl {
+    padding-left: 10px
+}
+
+.ph, .pr {
+    padding-right: 10px
+}
+
+.pd {
+    padding: 10px
+}
+
+.cleaner, .ul-nostyle {
+    padding: 0;
+    margin: 0
+}
+
+.overlay {
+    position: relative
+}
+
+.overlay:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .4;
+    -webkit-transition: opacity linear .5s;
+    -o-transition: opacity linear .5s;
+    transition: opacity linear .5s
+}
+
+.oe-float-centered, .v-middle, .vh-middle {
+    position: absolute;
+    top: 50%;
+    display: block
+}
+
+.full-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+.v-middle {
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+.oe-float-centered, .vh-middle {
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.delay-1 {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s
+}
+
+.delay-2 {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s
+}
+
+.delay-3 {
+    -webkit-animation-delay: .9s;
+    animation-delay: .9s
+}
+
+.delay-4 {
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s
+}
+
+.delay-5 {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s
+}
+
+.ul-nostyle {
+    list-style: none
+}
+
+.circle {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%
+}
+
+.preserve-3d {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.fontRegular {
+    font-weight: 400
+}
+
+.fontLight {
+    font-weight: 300
+}
+
+.fontLightItalic {
+    font-weight: 300
+}
+
+.oe-main {
+}
+
+.kfeedback {
+    margin: 0 auto
+}
+
+.kfeedback input[type=text] {
+    border: 1px solid #dbdcde;
+    outline: 0
+}
+
+.kfeedback input[type=text]:focus {
+    outline: 0;
+    border-color: #f6f6f6 #f6f6f6 #ec135b;
+    box-shadow: none
+}
+
+.kfeedback input[type=text].form-copied[disabled] {
+    background-color: #fff
+}
+
+.kfeedback .container {
+    padding-bottom: 0
+}
+
+.kfeedback .divider {
+    width: 100%;
+    padding: 10px 0;
+    clear: both
+}
+
+.kfeedback .divider.divider-line {
+    height: 1px;
+    background-color: #dbdcde;
+    padding: 0
+}
+
+.kfeedback .divider.divider-line.divider-line-bold {
+    height: 2px
+}
+
+.kfeedback .divider.divider-line.divider-2x {
+    padding: 0;
+    margin: 20px 0
+}
+
+.kfeedback .divider.divider-2x {
+    padding: 20px 0
+}
+
+.kfeedback .divider.divider-2x.divider-line {
+    padding: 0;
+    margin: 20px 0
+}
+
+.kfeedback .divider.divider-3x {
+    padding: 30px 0
+}
+
+.kfeedback .divider.divider-4x {
+    padding: 40px 0
+}
+
+.kfeedback .overlay-bg {
+    position: relative
+}
+
+.kfeedback .overlay-bg:after {
+    background: rgba(0, 0, 0, .6);
+    content: ' ';
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%
+}
+
+.kfeedback .center-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.kfeedback .left-middle {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%)
+}
+
+.kfeedback .form-control, .kfeedback .form-control:focus, .kfeedback .form-control:hover {
+    outline: 0;
+    box-shadow: none
+}
+
+.kfeedback .oe-navbar {
+    background: #e50051;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0
+}
+
+.kfeedback .oe-navbar .navbar-header {
+    width: 25%
+}
+
+.kfeedback .oe-navbar .navbar-brand {
+    color: #fff
+}
+
+.kfeedback .oe-navbar .navbar-brand i {
+    font-size: 1.3em
+}
+
+.kfeedback .oe-navbar .navbar-brand:hover {
+    color: #444
+}
+
+.kfeedback .oe-navbar .navbar-nav li a {
+    font-size: 1.3em;
+    color: #fff
+}
+
+.kfeedback .oe-navbar .navbar-nav li a:focus, .kfeedback .oe-navbar .navbar-nav li a:hover {
+    background-color: transparent;
+    color: #444
+}
+
+.kfeedback .primary-list {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.kfeedback .primary-list li a {
+    display: block;
+    padding: 9px 3px;
+    color: #333;
+    -webkit-transition: background 150ms ease-out;
+    -o-transition: background 150ms ease-out;
+    transition: background 150ms ease-out
+}
+
+.kfeedback .primary-list li a .fa {
+    font-size: 1.4em;
+    margin-right: 9px
+}
+
+.kfeedback .primary-list li a:focus, .kfeedback .primary-list li a:hover {
+    background-color: #eee;
+    text-decoration: none
+}
+
+.kfeedback .primary-list li.active a {
+    background-color: #ec135b;
+    color: #fff
+}
+
+.kfeedback .oe-form {
+    margin-top: 30px
+}
+
+.kfeedback .btn-copy {
+    cursor: pointer
+}
+
+.kfeedback .fb-title {
+    background-color: #f5f5f5;
+    color: #ec135b;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.kfeedback .btn-copy-template {
+    background-color: #ec135b;
+    color: #fff;
+    border-color: transparent;
+    padding: 15px 30px;
+    font-size: 20px
+}
+
+.emotion-image{
+    margin-top: 55px
+}
+
+.emotion-label{
+    margin-top: 10px;
+}
+
+.kfeedback .btn-go-back{
+    padding: 0 15px;
+    color: #ec135b;
+}

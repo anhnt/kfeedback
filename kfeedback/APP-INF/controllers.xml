@@ -1,0 +1,15 @@
+<controllers>
+  <source>/APP-INF/config.js</source>
+  <source>/APP-INF/app.js</source>
+  <source>/APP-INF/adminKfeedback.js</source>
+  <source>/APP-INF/websiteKfeedback.js</source>
+
+  <menu parentId="menuRoot" id="menuManageFeedback" text="K-Feedback" css="fa fa-users" path="/kfeedback/#" ordering="48"/>
+
+    <role class="role">
+        <name>Public Kfeedback</name>
+        <privNames>
+            <string>READ_CONTENT</string>
+        </privNames>
+    </role>
+</controllers>

@@ -1,0 +1,20 @@
+.fb-app {
+  color: #888;
+}
+.fb-app .oe-navbar {
+  background-color: #ec135b;
+}
+
+.fb-app .oe-navbar .navbar-brand {
+  font-size: 25px;
+  color: #fff;
+}
+.fb-app .fb-main {
+
+}
+.fb-app .fb-thankyou {
+  margin-top: 150px;
+}
+.fb-app .fb-redirect {
+  margin-top: 20px;
+}
