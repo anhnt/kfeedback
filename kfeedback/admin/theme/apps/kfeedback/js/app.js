@@ -230,10 +230,21 @@
 
   $scope.save = function() {
     if($scope.survey.name != ''
-       && $scope.survey.question != ''
-       && $scope.survey.options.length > 0) {
-
-      //slugOptions();
+        && $scope.survey.question != ''
+        && $scope.survey.options.length > 0) {
+      var valid = true;
+      for(var i = 0; i< $scope.survey.options.length; i++){
+        if(!$scope.survey.options[i].redirectLink){
+          valid = false;
+        }
+        if(!$scope.survey.options[i].title){
+          valid = false;
+        }
+      }
+      if(!valid){
+        return;
+      }
+      
       $scope.submitText = 'Submiting...'
       if($scope.edit) {
         $scope.updateExist();
