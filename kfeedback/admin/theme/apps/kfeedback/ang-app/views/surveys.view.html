@@ -1,31 +1,33 @@
-<h3 class="fb-title"><a class="pull-left btn-go-back" ui-sref="surveys.list" title="Back to surveys list"><i class="fa fa-arrow-left"></i></a>Analytic</h3>
+<h3 class="fb-title"><a class="pull-left btn-go-back" ui-sref="surveys.list" title="Back to surveys list"><i
+        class="fa fa-arrow-left"></i></a>Analytic</h3>
 <highchart id="chart-{{survey.slug}}" config="chartOption"></highchart>
 
 <h3 class="mt3x fb-title">{{survey.name}}</h3>
 <p>{{survey.question}}</p>
 <div class="mt3x"></div>
 <div class="form-group">
-  <input type="text" ng-model="website" class="form-control" />
+    <input type="text" ng-model="website" class="form-control"/>
 </div>
 <div class="row mt" ng-repeat="option in survey.options">
-  <div class="col-md-1">
-    <img src="{{option.emoji}}" width="40" alt="{{option.title}}" />
-  </div>
-  <div class="col-md-2">{{option.title}}</div>
-  <div class="col-md-9">
-    <div class="input-group">
-      <span class="input-group-addon">{{website}}{{kApp}}</span>
-      <input type="text" class="form-control form-copied" value="{{option.slug}}" disabled />
-      <!--
-      <span class="input-group-addon btn-copy" clip-copy="getLink(option)" ><i class="fa fa-clipboard"></i></span>
-      -->
+    <div class="col-md-1">
+        <img ng-src="{{option.emoji}}" width="40" alt="{{option.title}}"/>
     </div>
-  </div>
+    <div class="col-md-2">{{option.title}}</div>
+    <div class="col-md-9">
+        <div class="input-group">
+            <span class="input-group-addon">{{website}}{{kApp}}</span>
+            <input type="text" class="form-control form-copied" value="{{option.slug}}" disabled/>
+            <!--
+            <span class="input-group-addon btn-copy" clip-copy="getLink(option)" ><i class="fa fa-clipboard"></i></span>
+            -->
+        </div>
+    </div>
 </div>
 <div class="row mt3x">
-  <div class="col-md-12 text-center">
-    <a class="btn btn-large btn-primary btn-copy-template" href="javascript:;" clip-copy="getEmailTemplate()" ><i class="fa fa-clipboard"></i> Copy Survey to Email</a>
-  </div>
+    <div class="col-md-12 text-center">
+        <a class="btn btn-large btn-primary btn-copy-template" href="javascript:;" clip-copy="getEmailTemplate()"><i
+                class="fa fa-clipboard"></i> Copy Survey to Email</a>
+    </div>
 </div>
 <div class="mt3x"></div>
 

@@ -1,49 +1,56 @@
-<h3 class="fb-title">Create or update survey <a class="pull-left btn-go-back" ui-sref="surveys.list" title="Back to surveys list"><i class="fa fa-arrow-left"></i></a></h3>
+<h3 class="fb-title">Create or update survey <a class="pull-left btn-go-back" ui-sref="surveys.list"
+                                                title="Back to surveys list"><i class="fa fa-arrow-left"></i></a></h3>
 <form class="oe-form form-horizontal">
-  <div class="form-group">
-    <label class="col-md-2 control-label">Name</label>
-    <div class="col-md-10">
-      <input type="text" required ng-model="survey.name" class="form-control" placeholder="Name" />
+    <div class="form-group">
+        <label class="col-md-2 control-label">Name</label>
+
+        <div class="col-md-10">
+            <input type="text" required ng-model="survey.name" class="form-control" placeholder="Name"/>
+        </div>
     </div>
-  </div>
-  <div class="form-group">
-    <label class="col-md-2 control-label">Slug</label>
-    <div class="col-md-10">
-      <input type="text" ng-model="survey.slug" class="form-control" placeholder="Slug" disabled/>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Slug</label>
+
+        <div class="col-md-10">
+            <input type="text" ng-model="survey.slug" class="form-control" placeholder="Slug" disabled/>
+        </div>
     </div>
-  </div>
-  <!--<div class="form-group">-->
+    <!--<div class="form-group">-->
     <!--<label class="col-md-2 control-label">Redirect Link</label>-->
     <!--<div class="col-md-10">-->
-      <!--<input type="text" ng-model="survey.redirect_link" class="form-control" placeholder="Link to redirect user"/>-->
+    <!--<input type="text" ng-model="survey.redirect_link" class="form-control" placeholder="Link to redirect user"/>-->
     <!--</div>-->
-  <!--</div>-->
-  <div class="form-group">
-    <label class="col-md-2 control-label">Question</label>
-    <div class="col-md-10">
-      <input type="text" required ng-model="survey.question" class="form-control" placeholder="Question" />
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="col-md-2 control-label">Options</label>
-    <div class="col-md-10">
-      <div class="form-group" ng-repeat="option in survey.options">
-        <div class="col-md-1">
-          <img class="emotion-image" ng-src="{{option.emoji}}" width="40" alt="{{option.title}}" />
-        </div>
-        <div class="col-md-11">
-          <label class="emotion-label">Text</label>
-          <input type="text" ng-model="option.title" class="form-control" placeholder="Option {{$index}}" required />
+    <!--</div>-->
+    <div class="form-group">
+        <label class="col-md-2 control-label">Question</label>
 
-          <label class="emotion-label">Redirect Link</label>
-          <input type="text" required ng-model="option.redirectLink" class="form-control" placeholder="Link to redirect user" />
+        <div class="col-md-10">
+            <input type="text" required ng-model="survey.question" class="form-control" placeholder="Question"/>
         </div>
-      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" ng-click="save()" class="btn btn-primary">{{submitText}}</button>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Options</label>
+
+        <div class="col-md-10">
+            <div class="form-group" ng-repeat="option in survey.options">
+                <div class="col-md-1">
+                    <img class="emotion-image" ng-src="{{option.emoji}}" width="40" alt="{{option.title}}"/>
+                </div>
+                <div class="col-md-11">
+                    <label class="emotion-label">Text</label>
+                    <input type="text" ng-model="option.title" class="form-control" placeholder="Option {{$index}}"
+                           required/>
+
+                    <label class="emotion-label">Redirect Link</label>
+                    <input type="text" required ng-model="option.redirectLink" class="form-control"
+                           placeholder="Link to redirect user"/>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" ng-click="save()" class="btn btn-primary">{{submitText}}</button>
+        </div>
+    </div>
 </form>

@@ -1,16 +1,17 @@
 <main class="oe-main">
-  <div class="">
-    <div class="row">
-      <div class="col-sm-2 col-xs-12 hide">
-        <aside>
-          <ul class="primary-list">
-            <li ui-sref-active="active"><a ui-sref="surveys.list({})" ><i class="fa fa-area-chart"></i>Surveys</a></li>
-          </ul>
-        </aside>
-      </div>
-      <div class="col-sm-12 col-xs-12 main-col">
-        <div ui-view=""></div>
-      </div>
+    <div class="">
+        <div class="row">
+            <div class="col-sm-2 col-xs-12 hide">
+                <aside>
+                    <ul class="primary-list">
+                        <li ui-sref-active="active"><a ui-sref="surveys.list({})"><i class="fa fa-area-chart"></i>Surveys</a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-sm-12 col-xs-12 main-col">
+                <div ui-view=""></div>
+            </div>
+        </div>
     </div>
-  </div>
 </main>
