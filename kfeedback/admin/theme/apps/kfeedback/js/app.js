@@ -103,7 +103,7 @@ App.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     function lazyRouteParser(routes) {
         angular.forEach(routes, function (stateConfig, state) {
             var parentState = state.replace(/(^|\.)[^.]+$/, '')
-                , templateUrl = $rootApp + 'views/' + state + '.html'
+                , templateUrl = $rootApp + 'views/' + state + '.html?v=1'
                 , controller = state.replace(/(^|\.|-)(.)/g, function () {
                         return arguments[2].toUpperCase()
                     }) + 'Ctrl';
