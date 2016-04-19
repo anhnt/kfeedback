@@ -25,20 +25,7 @@
 </div>
 <div class="row mt3x">
     <div class="col-md-12 text-center">
-        <a class="btn btn-large btn-primary btn-copy-template" href="javascript:;" clip-copy="getEmailTemplate()"><i
-                class="fa fa-clipboard"></i> Copy Survey to Email</a>
+        <a class="btn btn-large btn-primary btn-copy-template" clip-click-fallback="noFlash" clip-click="doClick()" href="javascript:;" clip-copy="getEmailTemplate()"><i class="fa fa-clipboard"></i> Copy Survey to Email</a>
     </div>
 </div>
 <div class="mt3x"></div>
-
-<!--
-<h3 class="fb-title">Feedbacks</h3>
-<table ng-table="tableFeedbacks" class="table table-condensed table-bordered table-striped" show-filter="true">
-  <tr ng-repeat="row in $data">
-    <td data-title="'Option'" filter="{option_text: 'text'}">{{row.option_text}}</td>
-    <td data-title="'Website'" filter="{website: 'text'}">{{row.website}}</td>
-    <td data-title="'Created'">{{row.created | amDateFormat:'DD-MM-YYYY'}}</td>
-  </tr>
-</table>
-<div class="mt3x"></div>
--->

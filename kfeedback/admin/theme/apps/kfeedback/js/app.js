@@ -334,6 +334,17 @@ App.controller('SurveysViewCtrl', function ($scope, $state, Surveys, $stateParam
     Chart.getSeries(survey).then(function (series) {
         $scope.chartOption.series = series;
     });
+    $scope.flashEnabled = true;
+    $scope.noFlash = function(){
+        $scope.flashEnabled = false;
+        Msg.error('Flash is disabled! Please enable it and try again')
+    }
+
+    $scope.doClick = function () {
+        if($scope.flashEnabled){
+            Msg.success('Copied to clipboard');
+        }
+    }
 });
 
 App.directive('ngEnter', function () {
