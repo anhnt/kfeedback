@@ -29,7 +29,7 @@
     <div class="col-md-10">
       <div class="form-group" ng-repeat="option in survey.options">
         <div class="col-md-1">
-          <img class="emotion-image" src="{{option.emoji}}" width="40" alt="{{option.title}}" />
+          <img class="emotion-image" ng-src="{{option.emoji}}" width="40" alt="{{option.title}}" />
         </div>
         <div class="col-md-11">
           <label class="emotion-label">Text</label>

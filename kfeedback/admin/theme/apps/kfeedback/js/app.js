@@ -434,52 +434,6 @@
    * @param {String} surveyId
    */
   this.getBySurvey = function (surveyId) {
-    /*
-    return $q.when([
-      {
-        email: 'minhnt@ownego.com',
-        option_text: 'Bad',
-        option_slug: 'bad',
-        website: 'http://sonnh.olhub.com',
-        created: 1147651200000
-      },
-      {
-        email: 'minhnt@ownego.com',
-        option_text: 'Bad',
-        option_slug: 'bad',
-        website: 'http://sonnh.olhub.com',
-        created: 1147910400000
-      },
-      {
-        email: 'minhnt@ownego.com',
-        option_text: 'Bad',
-        option_slug: 'bad',
-        website: 'http://sonnh.olhub.com',
-        created: 1147910400000
-      },
-      {
-        email: 'minhnt@ownego.com',
-        option_text: 'Bad',
-        option_slug: 'bad',
-        website: 'http://sonnh.olhub.com',
-        created: 1147996800000
-      },
-      {
-        email: 'minhnt@ownego.com',
-        option_text: 'Good',
-        option_slug: 'bad',
-        website: 'http://sonnh.olhub.com',
-        created: 1456213386087
-      },
-      {
-        email: 'minhnt@ownego.com',
-        option_text: 'Good',
-        option_slug: 'good',
-        website: 'http://sonnh.olhub.com',
-        created: 1456213386087
-      },
-    ]);
-    */
 
     var deferred = $q.defer();
     $http({
@@ -506,55 +460,6 @@
 
 +App.service('Surveys', function($q, config, $http, config) {
   var self = this;
-
-  
-  /*
-  this.surveys = [
-    {
-      id: 1234,
-      slug: 'survey-1',
-      name: 'Ask a question',
-      question: 'How to do this application?',
-      created: 1455880749910,
-      options: [
-        {
-          title: 'Bad',
-          slug: 'bad',
-        },
-        {
-          title: 'Normal',
-          slug: 'normal',
-        },
-        {
-          title: 'Good',
-          slug: 'good',
-        }
-      ]
-    },
-    {
-      id: 1334,
-      slug: 'survey-2',
-      name: 'Ask a another question',
-      question: 'How to do with another questions?',
-      created: 1455880149910,
-      options: [
-        {
-          title: 'Bad',
-          slug: 'bad',
-        },
-        {
-          title: 'Normal',
-          slug: 'normal',
-        },
-        {
-          title: 'Good',
-          slug: 'good',
-        }
-      ]
-    },
-  ];
-  */
-  
 
   this.getAll = function(force) {
 
